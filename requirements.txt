@@ -1,0 +1,14 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+seaborn
+python-ternary
+tdqm
+ugtm
+altair 
+vega_datasets
+jupyter
+mhfp
+mxfp
+tqdm
