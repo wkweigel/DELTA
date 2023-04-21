@@ -1,7 +1,7 @@
 # DELTA
 
-DELTA (DNA Encoded Library Topological Assignment) is a system for classificaion of DNA encoded libraries (DELs) according to the topological arrangement of thier building blocks (BBs). <br>
-The following repository is included as supporting information for **LINK** 
+DELTA (DNA Encoded Library Topological Assignment) is a system for classificaion of DNA encoded libraries (DELs) according to the topological arrangement of thier building blocks (BBs). <br><br>
+The following repository is included as supporting information for **LINK** <br><br>
  This system assigns topological classification to a library as single string using the following algorithm:
 1)	Identify the longest path to the DNA attachment point.
 2)	Moving along the main chain, alphabetically assign each structural element in ascending order. Adjacent elements share a connection it is a branching element.
