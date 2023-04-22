@@ -13,6 +13,14 @@ The included notebooks contain the Python scripts for the following:
   
 The functions of each are discussed in more detail below.
 
+### Usage and set-up
+RDKit must be installed within its own virtual environment. If you don't already have RDKit installed, read the incuded setup instructions.
+The python modules necessary to support all the notebooks can be installed via pip using the included requirements.txt file.
+
+The contents of this this repository are intended to serve as an example workflow using only small sets of compounds. 
+Everything needed for the creation of seven topologically variant libraries is included. The libraries must be created first using the GenerateLibraries notebook. The rest of the notebooks are designed to work with these library output files. 
+
+
 ## Library Generation
 ![Library generation flowchart](/assets/LibraryGeneration.png)
 Running all the cells in this notebook will generate 1,000 random compounds for seven topologically variant DELs. The compounds for each DEL are output to csv files in the "Notebook Outputs" folder.
