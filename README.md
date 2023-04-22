@@ -56,3 +56,6 @@ All 874 12.5%
 
 Property distributions grouped by library for each property can be shown as violin plots. The values for the calculated properties may also be output as a csv file for all the compounds or limited to only those that pass all the druglikeness checks.
 
+## Principal Moment of Inertia Plots
+![Principal Moment of Inertia](/assets/PMI.png)<br>
+The PMI notebook uses the smiles in an input csv file to calculate normalized PMI ratios (NPRs) from the 3D-optimized geometry for each compound. The NPRs are then used to create ternary plots<sup>[6](https://github.com/marcharper/python-ternary)</sup> based on each compound's rod-, disk-, or sphere-likeness. The NPMs and ternary coordinants can also be output to a csv file.
