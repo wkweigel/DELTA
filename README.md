@@ -15,7 +15,9 @@ The functions of each are discussed in more detail below.
 
 ## Library Generation
 ![Library generation flowchart](/assets/LibraryGeneration.png)
+
 ## Fingerprinting and Principal Component Analysis (PCA)
+![Library generation flowchart](/assets/PCA.png)
 
 ## Generative Topographic Mapping (GTM)
 
