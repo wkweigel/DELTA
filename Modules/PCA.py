@@ -156,8 +156,8 @@ class PCA():
         '''
         self.pca_coords=pcaPreprocess(self.fp_array, doPCA=True,n_components=self.nBits)
         pca_x1, pca_x2= self.make_lists_from_2D_coords()
-        self.chart_df['pca x1']=pca_x1
-        self.chart_df['pca x2']=pca_x2
+        self.chart_df['x1']=pca_x1
+        self.chart_df['x2']=pca_x2
 
     def ThreeDimensionalPCA(self):
         '''Takes an array for fingerprints, performs 2D pca, and adds the 2D coordinates to the specified dataframe
@@ -169,18 +169,18 @@ class PCA():
         '''
         self.pca_coords=pcaPreprocess(self.fp_array, doPCA=True,n_components=self.nBits)
         pca_x1, pca_x2, pca_x3= self.make_lists_from_3D_coords(self.pca_coords)
-        self.chart_df['pca x1']=pca_x1
-        self.chart_df['pca x2']=pca_x2
-        self.chart_df['pca x3']=pca_x3
+        self.chart_df['x1']=pca_x1
+        self.chart_df['x2']=pca_x2
+        self.chart_df['x3']=pca_x3
 
     def PlotPCA(self):
         '''Construct plots using the PCA coords from the data_df faceted according to DEL'''
         self.PCA_charts = alt.Chart(self.chart_df).mark_circle().encode(
-            x='pca x1', y='pca x2',
+            x='x1', y='x2',
             color=alt.Color("DEL:N",
                             legend=alt.Legend(title="Type")),
             size=alt.value(10),
-            tooltip=["pca x1", "pca x2", "DEL:N", 'ID:N']
+            tooltip=["x1", "x2", "DEL:N", 'ID:N']
         ).properties(title=str(self.descriptor) + " PCA Sets", width=300, height=300).facet(
             column='DEL:N'
         ).interactive()
@@ -188,11 +188,11 @@ class PCA():
     def PlotOverlayPCA(self):
         '''Construct plots using the PCA coords from the data_df faceted according to DEL'''
         self.PCA_Overlay_chart = alt.Chart(self.chart_df).mark_circle().encode(
-            x='pca x1', y='pca x2',
+            x='x1', y='x2',
             color=alt.Color("DEL:N",
                             legend=alt.Legend(title="Type")),
             size=alt.value(10),
-            tooltip=["pca x1", "pca x2", "DEL:N", 'ID:N']
+            tooltip=["x1", "x2", "DEL:N", 'ID:N']
         ).properties(title=str(self.descriptor) + " PCA Sets", width=300, height=300).interactive()
     
     def csv_output(self):
