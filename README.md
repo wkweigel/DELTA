@@ -29,7 +29,7 @@ The BB file is located in the root directory. Each DEL uses a seperate DE file l
 
 ## Fingerprinting and Principal Component Analysis (PCA)
 ![Principle Component Analysis](/assets/PCA.png)
-The PCA notebook contains scripts for calculating molecular fingerprints for the DEL compounds which are then used to perform 2D or 3D PCA. The available fingerprinting methods include ECFP4, ECFP6, AP, MACCS, MQN, MHFP6, MXFP, and MAP4. 2D plots are generated using Vega-Altair to visulaize the results.
+The PCA notebook contains scripts for calculating molecular fingerprints for the DEL compounds which are then used to perform 2D or 3D PCA. The available fingerprinting methods include ECFP4, ECFP6, AP, MACCS, MQN, MHFP6<sup>[1](https://github.com/reymond-group/mhfp)</sup>, MXFP<sup>[2](https://github.com/reymond-group/mxfp_python)</sup>, and MAP4<sup>[3](https://github.com/reymond-group/map4)</sup>. 2D plots are generated using Vega-Altair to visulaize the results.
 
 ## Generative Topographic Mapping (GTM)
 ![Generative Topographic Mapping](/assets/GTM.png)
