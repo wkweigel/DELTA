@@ -14,7 +14,7 @@ The included notebooks contain the Python scripts for the following:
 The functions of each are discussed in more detail below.
 
 ## Library Generation
-
+![Library generation flowchart](/assets/LibraryGeneration.png)
 ## Fingerprinting and Principal Component Analysis (PCA)
 
 ## Generative Topographic Mapping (GTM)
