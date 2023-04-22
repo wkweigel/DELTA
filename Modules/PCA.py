@@ -194,3 +194,7 @@ class PCA():
             size=alt.value(10),
             tooltip=["pca x1", "pca x2", "DEL:N", 'ID:N']
         ).properties(title=str(self.descriptor) + " PCA Sets", width=300, height=300).interactive()
+    
+    def csv_output(self):
+        '''Output the PCA results to a csv file'''
+        self.chart_df.to_csv('Notebook Outputs/'+str(self.descriptor)+'_PCA_Results.csv')
