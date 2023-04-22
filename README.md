@@ -21,7 +21,7 @@ Libraries are generated from two input csv files:
   - BB file (contains smiles and IDs for all the building blocks)
   - DE file (contains the pool of BBs IDs to use for each Diversity Element)
 
-The BB file is located in the root directory. Each DEL uses a seperate DE file located in the "BB Groups" folder. Unique sets of BBs are generated using the Library Set module. Each set of BBs is then assembled into the final DEL compound using the Reactions module. The assembly of the DEL is perormed with a series of reactions using RDKit and various strings of reaction smarts. See the GenerateLibraries notebook for more information.
+The BB file is located in the root directory. Each DEL uses a seperate DE file located in the "Library BB Groups" folder. Unique sets of BBs are first generated using the Library Set module. Each set of BBs is then assembled into the final DEL compound using the Reactions module. The assembly of the DEL is perormed with a series of reactions using RDKit and various strings of reaction smarts. See the GenerateLibraries notebook for more information.
 
 
 
@@ -33,3 +33,4 @@ The PCA notebook contains scripts for calculating molecular fingerprints for the
 
 ## Generative Topographic Mapping (GTM)
 ![Generative Topographic Mapping](/assets/GTM.png)
+GTM calculations are performed using the ugtm<sup>[4](https://github.com/reymond-group/map4](https://github.com/hagax8/ugtm)</sup> library. The core GTM algoritm was modified slightly to enable plotting using the method of "Responsibility Patterns" used by Klimenko_et al.<sup>[5]([https://github.com/reymond-group/map4](https://github.com/hagax8/ugtm](https://doi.org/10.1021/acs.jcim.6b00192))</sup>. A csv file containing a collection of 10,000 ChEMBL compounds is included in the root directory which is used as the training set for GTM calculations. With the included script, GTM is performed using the ECFP6 descriptor by defualt and calculations are typically complete within 20-30 minutes on a desktop PC. The 2D projections of the DELs are visualized using 2D plots and also may be displayed using binned heatmaps.
