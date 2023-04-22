@@ -37,4 +37,4 @@ GTM calculations are performed using the ugtm<sup>[4](https://github.com/hagax8/
 
 ## Pairwise Distance Analysis
 ![Generative Topographic Mapping](/assets/Tanimoto.png)<br>
-Pairwise distances can be calculated from compounds or coordinate data from an input csv file. Pairwise Tanimoto similarities use smiles and can be calculated using any of the outputs from the GenerateLibraries notebook. Cartesian-based distance metrics require coordinate data  
+Pairwise distances can be calculated from compounds or coordinate data from an input csv file. Pairwise Tanimoto similarities use smiles and can be calculated using any of the outputs from the GenerateLibraries notebook. Cartesian-based distance metrics require coordinate data that can be produced using the outputs from the PCA or GTM notebooks. Distance ditributions can be visualized using violin plots that are generated using Seaborn.
