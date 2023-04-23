@@ -70,4 +70,4 @@ The PMI notebook uses the smiles in an input csv file to calculate normalized PM
 
 ## TMAP
 ![TMAP](/assets/TMAP.png)<br>
-TMAP analysis may be performed using the Python file located in the "tmap" folder. Note that the tmap library <sup>[7](https://tmap.gdb.tools/#simple-graph)</sup> must be run within linux or WSL using Python 3.9. This is best accomplished by creating a seperate RDKit venv for using this older Python version. Faerun<sup>[8](https://github.com/reymond-group/faerun-python)</sup> must also be installed for tmap visualization.
+TMAP analysis may be performed using the Python file located in the "tmap" folder. Note that the tmap library<sup>[7](https://tmap.gdb.tools/#simple-graph)</sup> must be run within linux or WSL using Python 3.9. This is best accomplished by creating a seperate RDKit venv for using this older Python version. Faerun<sup>[8](https://github.com/reymond-group/faerun-python)</sup> must also be installed for tmap visualization.
