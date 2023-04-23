@@ -10,6 +10,7 @@ The included notebooks contain the Python scripts for the following:
   - Druglike property calculation
   - Principal Moment of Inertia (PMI) calculation
   - Tanimoto similarity map analysis 
+  - TMAP generation 
   
 The functions of each are discussed in more detail below.
 
