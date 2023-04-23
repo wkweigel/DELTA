@@ -67,3 +67,7 @@ Property distributions grouped by library for each property can be shown as viol
 ## Principal Moment of Inertia Plots
 ![Principal Moment of Inertia](/assets/PMI.png)<br>
 The PMI notebook uses the smiles in an input csv file to calculate normalized PMI ratios (NPRs) from the 3D-optimized geometry for each compound. The NPRs are then used to create ternary plots<sup>[6](https://github.com/marcharper/python-ternary)</sup> based on each compound's rod-, disk-, or sphere-likeness. The NPMs and ternary coordinants can also be output to a csv file.
+
+## TMAP
+![TMAP](/assets/TMAP.png)<br>
+TMAP analysis may be performed using the Python file located in the "tmap" folder. Note that the tmap library <sup>[7](https://tmap.gdb.tools/#simple-graph)</sup> must be run within linux or WSL using Python 3.9. This is best accomplished by creating a seperate RDKit venv for using this older Python version. Faerun<sup>[8](https://github.com/reymond-group/faerun-python)</sup> must also be installed for tmap visualization.
