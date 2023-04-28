@@ -1,5 +1,6 @@
 # Specific to DELTA
 Notebook Outputs/*.csv
+Notebook Outputs/*.svg
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
